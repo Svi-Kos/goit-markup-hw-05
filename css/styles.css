@@ -123,6 +123,24 @@ img {
   color: var(--accent-color);
 }
 
+.current {
+  position: relative;
+}
+
+.current::before {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  /* outline: 1px solid var(--accent-color); */
+}
+
 /* contacts-header */
 
 .contacts-header {
@@ -173,6 +191,10 @@ img {
 .link:focus .mail-icon,
 .link:focus .phone-icon {
   fill: var(--accent-color);
+}
+
+.head {
+  border: 1px solid #ececec;
 }
 
 /* hero */
@@ -342,7 +364,15 @@ img {
   margin-right: 30px;
 }
 
+.our-work .item {
+  position: relative;
+}
+
 .our-work .title {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
   display: inline-block;
   color: var(--white);
   background-color: rgba(47, 48, 58, 0.8);
@@ -495,6 +525,7 @@ img {
 .examples .item:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
 }
 
 .examples .item:nth-child(3n) {
@@ -549,6 +580,40 @@ img {
 
 .examples a {
   text-decoration: none;
+}
+
+.thumb {
+  position: relative;
+}
+
+.thumb::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  border-radius: 5px;
+  transition: 250ms;
+  opacity: 0;
+}
+
+.examples-text {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  color: var(--white);
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  margin: 0;
+  transition: 250ms;
+  opacity: 0;
+}
+
+.examples .item:hover .examples-text,
+.examples .item:hover .thumb::before {
+  opacity: 1;
 }
 
 /* footer */
