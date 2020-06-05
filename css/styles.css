@@ -46,6 +46,7 @@
   border: 0px;
   padding: 0px;
   clip: rect(0 0 0 0);
+
   overflow: hidden;
 }
 
@@ -56,12 +57,12 @@ img {
 /* logo */
 
 .logo {
-  color: var(--accent-color);
-
   font-family: Raleway, sans-serif;
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
+
+  color: var(--accent-color);
 }
 
 .logo-main {
@@ -105,12 +106,13 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--primary-text-color);
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
   letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+
   text-decoration: none;
 }
 
@@ -138,7 +140,6 @@ img {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-  /* outline: 1px solid var(--accent-color); */
 }
 
 /* contacts-header */
@@ -158,13 +159,13 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--text-color);
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  color: var(--text-color);
 }
 
 .contacts-header .link:hover,
@@ -176,6 +177,7 @@ img {
   width: 16px;
   height: 16px;
   margin-right: 10px;
+
   fill: var(--text-color);
 }
 
@@ -183,6 +185,7 @@ img {
   width: 15px;
   height: 15px;
   margin-right: 10px;
+
   fill: var(--text-color);
 }
 
@@ -202,14 +205,14 @@ img {
 .hero-title {
   margin-top: 0;
 
-  color: var(--white);
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  color: var(--white);
 }
 
 .hero {
@@ -217,6 +220,7 @@ img {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
@@ -244,17 +248,18 @@ img {
 
 .button {
   display: inline-block;
-  border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
 
-  color: var(--white);
-  background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+  border-radius: 4px;
   text-decoration: none;
+
+  color: var(--white);
+  background-color: var(--accent-color);
 }
 
 .submit .button {
@@ -273,12 +278,13 @@ img {
   border-radius: 4px;
   padding: 6px 22px;
 
-  color: var(--primary-text-color);
-  background-color: var(--button-bcg-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   border: none;
+
+  color: var(--primary-text-color);
+  background-color: var(--button-bcg-color);
 }
 
 .filter-button:hover,
@@ -298,12 +304,12 @@ img {
   margin-top: 0;
   margin-bottom: 50px;
 
-  color: var(--primary-text-color);
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+
+  color: var(--primary-text-color);
 }
 
 /* features */
@@ -324,11 +330,12 @@ img {
   margin-top: 30px;
   margin-bottom: 10px;
 
-  color: var(--primary-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  color: var(--primary-text-color);
 }
 
 .features-description {
@@ -337,6 +344,7 @@ img {
 
   font-size: 14px;
   line-height: 1.7;
+
   color: var(--text-color);
 }
 
@@ -344,9 +352,10 @@ img {
   display: flex;
   width: 270px;
   height: 120px;
-  background-color: var(--button-bcg-color);
   justify-content: center;
   align-items: center;
+
+  background-color: var(--button-bcg-color);
 }
 
 .features-icon {
@@ -369,13 +378,11 @@ img {
 }
 
 .our-work .title {
+  display: inline-block;
   position: absolute;
   bottom: 0;
   right: 0;
 
-  display: inline-block;
-  color: var(--white);
-  background-color: rgba(47, 48, 58, 0.8);
   margin: 0;
   padding: 27px 0px;
   text-align: center;
@@ -385,6 +392,9 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  color: var(--white);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* our-team */
@@ -411,26 +421,29 @@ img {
 .our-team .title {
   margin-top: 30px;
   margin-bottom: 10px;
-  color: var(--primary-text-color);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+
+  color: var(--primary-text-color);
 }
 
 .our-team-description {
-  color: var(--text-color);
   margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.2;
+
+  color: var(--text-color);
 }
 
 .our-team .social-media {
+  display: inline-block;
+
   width: 20px;
   height: 20px;
   fill: var(--link-color);
-  display: inline-block;
 
   background-color: transparent;
 }
@@ -470,6 +483,7 @@ img {
 
 .our-clients .link {
   display: flex;
+
   width: 170px;
   height: 90px;
   border: 1px solid var(--link-color);
@@ -554,28 +568,30 @@ img {
 .examples .title {
   margin-top: 20px;
   margin-bottom: 4px;
-  color: var(--primary-text-color);
 
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  color: var(--primary-text-color);
 }
 
 .examples-description {
   margin-top: 0;
   margin-bottom: 20px;
-  color: var(--text-color);
 
   font-size: 16px;
   line-height: 1.2;
+
+  color: var(--text-color);
 }
 
 .examples-text {
-  color: var(--white);
-
   font-size: 18px;
   line-height: 1.5;
+
+  color: var(--white);
 }
 
 .examples a {
@@ -584,36 +600,31 @@ img {
 
 .thumb {
   position: relative;
-}
-
-.thumb::before {
-  display: block;
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 100%;
-  background-color: rgba(33, 150, 243, 0.9);
-  border-radius: 5px;
-  transition: 250ms;
-  opacity: 0;
+  overflow: hidden;
 }
 
 .examples-text {
   position: absolute;
-  width: 370px;
-  height: 294px;
-  color: var(--white);
   top: 0;
   left: 0;
+
+  width: 370px;
+  height: 294px;
+
   padding: 63px 24px;
   margin: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  border-radius: 5px;
+
+  color: var(--white);
+
   transition: 250ms;
-  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.examples .item:hover .examples-text,
-.examples .item:hover .thumb::before {
-  opacity: 1;
+.examples .item:hover .examples-text {
+  transform: translateY(0);
 }
 
 /* footer */
@@ -622,6 +633,7 @@ img {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+
   padding-top: 48px;
   padding-bottom: 28px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -642,29 +654,30 @@ img {
 }
 
 address {
-  color: var(--white);
-
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+
+  color: var(--white);
 }
 
 .contacts .link {
-  color: rgba(255, 255, 255, 0.6);
-
   font-style: normal;
   text-decoration: none;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 
 b {
   display: inline-block;
-  color: var(--white);
 
   font-weight: 700;
   font-size: 14px;
   margin-bottom: 21px;
   line-height: 1.1;
   text-transform: uppercase;
+
+  color: var(--white);
 }
 
 .social-media-footer .list {
@@ -686,10 +699,11 @@ b {
   display: flex;
   width: 44px;
   height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-media-footer .icon-social:hover,
@@ -701,9 +715,10 @@ b {
   padding-top: 18px;
   padding-bottom: 21px;
   margin: 0;
-  color: rgba(255, 255, 255, 0.6);
 
   font-size: 12px;
   line-height: 2;
   text-align: center;
+
+  color: rgba(255, 255, 255, 0.6);
 }
